@@ -19,6 +19,7 @@ I started this repository to track my progress and have something to look back o
 - **Express.js**: To make server logic and API routing simpler.
 - **MongoDB**: Learning how to handle databases and use Mongoose.
 - **REST APIs**: Designing and implementing endpoints for various use cases.
+- **REACT**: Designing frontend websites.
 - **....** and many more
 
 ## How to Use This Repo
