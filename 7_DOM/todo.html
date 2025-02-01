@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <input type="text" placeholder="Title" id="titleInput"> <br><br>
+    <input type="text" placeholder="Description" id="descriptionInput"> <br><br>
+    <button id="btn" onclick="addTodo()">Add Todo</button> <br><br>
+    <div id="todoList"></div>
+    <script>
+        let buttonCounter = 1;
+        function addTodo() {
+            const titleValue = document.getElementById("titleInput").value;
+            const descValue = document.getElementById("descriptionInput").value;
+
+            const todoItem = document.createElement("div");
+
+            const titleElement = document.createElement("div");
+            titleElement.innerHTML = titleValue;
+            todoItem.appendChild(titleElement);
+
+            const descElement = document.createElement("div");
+            descElement.innerHTML = descValue;
+            todoItem.appendChild(descElement);
+
+            const addBtn = document.createElement("button");
+            addBtn.innerHTML = "Mark as Done";
+            addBtn.setAttribute("id", `${buttonCounter}`);
+            addBtn.setAttribute("onclick", `todoDone(${buttonCounter})`);
+            todoItem.appendChild(addBtn);
+            buttonCounter++;
+
+            const todoList = document.getElementById("todoList");
+            todoList.appendChild(todoItem);
+        }
+
+        function todoDone(id) {
+            const doneBtn = document.getElementById(id);
+            doneBtn.innerHTML = "Done!";
+        }
+    </script>
+</body>
+</html>
