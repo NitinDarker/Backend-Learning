@@ -7,6 +7,7 @@ function App() {
     function updatePerson() {
         console.log("hi")
     }
+
     useEffect(() => {
         fetch("https://fakerapi.it/api/v1/persons")
             .then (async function (res) {
@@ -24,14 +25,14 @@ function App() {
         </>
     )
     
+    function PersonCont({firstname, email}) {
+        return (<>
+            <div>{firstname}</div>
+            <div>{email}</div>
+        </>
+        );
+    }
 }
 
-function PersonCont(props) {
-    return (<>
-        <div>{props.firstname}</div>
-        <div>{props.email}</div>
-    </>
-    )
-}
 
 export default App;
