@@ -5,9 +5,9 @@
     <script>
         function fetchPerson() {
             console.log("Fetch Function called by bu--on");
-            const ab = fetch("https://fakerapi.it/api/v1/persons")
-            console.log(ab); // 1. fetch returns a promise
-            const abc = fetch("https://fakerapi.it/api/v1/persons")
+            // const ab = fetch("https://fakerapi.it/api/v2/persons")
+            // console.log(ab); // 1. fetch returns a promise
+            const abc = fetch("https://fakerapi.it/api/v2/persons")
                 .then((res) => {
                     console.log(res); // 2. Locked body
                     const a = res.json();
@@ -15,17 +15,18 @@
                     console.log(a); // 3. Returns a promise
                     a.then((resp)=>{
                         console.log(resp); //4. Returns desired value
+                        document.getElementById("data").innerHTML = JSON.stringify(resp);
                     })
                 })
-        }
+            }
 
         async function fetchAnimal() {
             // Cleaner way using async-await
-            const response = await fetch("https://fakerapi.it/api/v1/persons");
+            const response = await fetch("https://fakerapi.it/api/v2/persons");
             const finalData = await response.json();
-            console.log(finalData);
             const target = document.getElementById("data")
             target.innerHTML = JSON.stringify(finalData);
+            console.log("API hit");
         }
     </script>
 
