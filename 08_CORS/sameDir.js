@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/sum", (req, res) => {
-    console.log(req.name);
+  console.log(req.name);
   const a = Number(req.body.a);
   const b = Number(req.body.b);
   res.status(200).send((a + b).toString());

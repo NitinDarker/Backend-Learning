@@ -1,8 +1,13 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://NitinSharma:nitin111@meteorwhite.adl7s.mongodb.net/Cats"
-);
+
+mongoose.connect(blip.env.MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => console.log('MongoDB connected successfully.'))
+.catch((err) => console.error('MongoDB connection error:', err));
 
 const Cat = mongoose.model("Cat", { name: String });
 
