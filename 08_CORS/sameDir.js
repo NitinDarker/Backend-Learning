@@ -1,8 +1,9 @@
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+// NO need for CORS
 app.use(express.json());
 
 app.post("/sum", (req, res) => {
@@ -10,6 +11,10 @@ app.post("/sum", (req, res) => {
   const a = Number(req.body.a);
   const b = Number(req.body.b);
   res.status(200).send((a + b).toString());
+});
+
+app.get("/", function (req, res) {
+  res.sendFile(__dirname + "/public/node.html");
 });
 
 app.listen(5000, () => {
