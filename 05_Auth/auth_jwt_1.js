@@ -6,6 +6,7 @@ const jwtPassword = "123456"; // Setting custom password
 
 const app = express();
 
+// In-memory database
 const ALL_USERS = [
   {
     username: "harkirat@gmail.com",
@@ -31,6 +32,7 @@ const ALL_USERS = [
 
 app.use(express.json());
 
+// Create this as a middleware
 function userExists(username, password) {
   // write logic to return true or false if this user exists
   // in ALL_USERS array

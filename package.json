@@ -29,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/NitinDarker/Backend-Learning/issues"
   },
-  "homepage": "https://github.com/NitinDarker/Backend-Learning#readme"
+  "homepage": "https://github.com/NitinDarker/Backend-Learning#readme",
+  "devDependencies": {}
 }
