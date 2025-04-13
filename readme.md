@@ -4,7 +4,7 @@ Welcome to my repository! This is where I document my journey into Backend Web D
 
 ## What’s Inside
 - **Learning Milestones**: A collection of the projects and snippets I’ve worked on as I’ve tackled new backend concepts.
-- **Cohort Assignments**:  Assignments from Cohort 2.0, by Harkirat Singh, whose mentorship I am deeply grateful for. These assignments were challenging but transformative, pushing me to grow and excel in ways I hadn’t imagined.
+- **Cohort Assignments**:  Assignments from Cohort 2.0 & 3.0, by Harkirat Singh, whose mentorship I am deeply grateful for. These assignments were challenging but transformative, pushing me to grow and excel in ways I hadn’t imagined.
 - **Experiments and Examples**: All the little bits of code I’ve written while figuring things out. These might not always be polished, but they helped me learn.
 
 ## Why This Exists
