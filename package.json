@@ -1,6 +1,33 @@
 {
   "dependencies": {
     "axios": "^1.8.4",
-    "express": "^5.1.0"
-  }
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "fetch": "^1.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "nodemon": "^3.1.9"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Welcome to my repository! This is where I document my journey into Backend Web Development – a mix of learning, experimenting, and yes, making a lot of rookie mistakes. It’s not perfect, but it’s real, and it shows how I’ve grown over time.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NitinDarker/Backend-Learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NitinDarker/Backend-Learning/issues"
+  },
+  "homepage": "https://github.com/NitinDarker/Backend-Learning#readme"
 }
