@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
+// Get the MongoDB URI from the environment variable
+const dbURI = process.env.MONGODB_URI;
 
-mongoose.connect(blip.env.MONGODB_URI, {
+mongoose.connect(dbURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
