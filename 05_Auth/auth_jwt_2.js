@@ -30,6 +30,7 @@ app.post('/signin', (req, res) => {
     try {
         const token = req.headers['authorization'];
         const decoded = jwt.verify(token, JWT_KEY);
+        jwt.decode
         console.log(decoded);
         return res.send("Welcome " + decoded.username);
     } catch (err) {
