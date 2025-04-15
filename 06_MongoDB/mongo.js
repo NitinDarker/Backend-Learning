@@ -3,12 +3,13 @@ const jwt = require("jsonwebtoken"); // Import jwt library
 const mongoose = require("mongoose"); // Import mongoose library
 const jwtPassword = "123456"; // Setting jwt verification password
 
-mongoose.connect(
-  "mongodb+srv://NitinSharma:nitin111@meteorwhite.adl7s.mongodb.net/User-1"
-);
+require('.dotenv').config();
+const mongoDbURI = process.env.MONGODB_URI;
+
+mongoose.connect(mongoDbURI);
 
 // Schema for User data
-const User = mongoose.model("User", {
+const User = mongoose.model("User1", {
   fullName: String,
   username: String,
   password: String,
